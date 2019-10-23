@@ -6,7 +6,7 @@ Getting Started
 
 - Change directory into your newly created project.
 
-    cd vivd_project
+    cd vividseats_quiz
 
 - Create a Python virtual environment.
 
