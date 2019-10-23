@@ -32,7 +32,7 @@ Getting Started
 
 - Load default data into the database using a script.
     - pip install pyramid_jinja2
-    -initialize_vivd_project_db development.ini
+    - initialize_vivd_project_db development.ini
 
 - Run your project.
   - pserve development.ini
@@ -40,20 +40,20 @@ Getting Started
 
 
 After this to test the api:
-for first use case:
-http://localhost:6543/available_tickets?event_id=107 put this url in browser
+- for first use case:
+    - http://localhost:6543/available_tickets?event_id=107 put this url in browser
 
-for second use case (new ticket) POST advisable to use postman
-url will be like below
-http://localhost:6543/new_ticket
-and in body in form data we can give below values:
-event_id, section, rownum, seat, price, seller_id, status Please provide value of all these columns
+- for second use case (new ticket) POST advisable to use postman
+- url will be like below
+- http://localhost:6543/new_ticket
+- and in body in form data we can give below values:
+- event_id, section, rownum, seat, price, seller_id, status Please provide value of all these columns
 
-for 3rd case PUT, url will be like this 
-http://localhost:6543/update_ticket
-event_id, section, rownum, seat, price, seller_id, status please provide all the values of these columns
+- for 3rd case PUT, url will be like this 
+- http://localhost:6543/update_ticket
+- event_id, section, rownum, seat, price, seller_id, status please provide all the values of these columns
 
-for 4th case get best ticke(GET)
-url will be like this 
-http://localhost:6543/best_ticket?event_id=107
-just paste this in browser you will get the result.
+- for 4th case get best ticke(GET)
+- url will be like this 
+- http://localhost:6543/best_ticket?event_id=107
+- just paste this in browser you will get the result.
