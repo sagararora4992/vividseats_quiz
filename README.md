@@ -5,24 +5,20 @@ Getting Started
 ---------------
 
 - Change directory to the cloned repository given below command.
+    - cd vividseats_quiz
 
-    cd vividseats_quiz
-
-Run the below commands for creating mysql docker image:
-docker build -t my-mysql .
-docker run -d -p 5432:3306 --name my-mysql -e MYSQL_ROOT_PASSWORD=supersecret my-mysql
+- Run the below commands for creating mysql docker image:
+- docker build -t my-mysql .
+- docker run -d -p 5432:3306 --name my-mysql -e MYSQL_ROOT_PASSWORD=supersecret my-mysql
 
 - Create a Python virtual environment.
-
-    python3 -m venv env
+    - python3 -m venv env
 
 - Upgrade packaging tools.
-
-    env/bin/pip install --upgrade pip setuptools
+    - env/bin/pip install --upgrade pip setuptools
 
 - Install the project in editable mode with its testing requirements.
-
-    env/bin/pip install -e ".[testing]"
+    - env/bin/pip install -e ".[testing]"
 
 - Activate the virtual ENV
 source env/bin/activate
@@ -31,15 +27,15 @@ source env/bin/activate
     - pip install pymysql
     - pip install cryptography
     - Generate your first revision.
-    alembic -c development.ini revision --autogenerate -m "init"
+    - alembic -c development.ini revision --autogenerate -m "init"
 
 
 - Load default data into the database using a script.
-    pip install pyramid_jinja2
-    initialize_vivd_project_db development.ini
+    - pip install pyramid_jinja2
+    -initialize_vivd_project_db development.ini
 
 - Run your project.
- pserve development.ini
+  - pserve development.ini
 
 
 
