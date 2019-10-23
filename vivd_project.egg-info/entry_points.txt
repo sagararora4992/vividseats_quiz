@@ -1,0 +1,6 @@
+[console_scripts]
+initialize_vivd_project_db = vivd_project.scripts.initialize_db:main
+
+[paste.app_factory]
+main = vivd_project:main
+
