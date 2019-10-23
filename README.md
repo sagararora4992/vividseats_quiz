@@ -21,7 +21,7 @@ Getting Started
     - env/bin/pip install -e ".[testing]"
 
 - Activate the virtual ENV
-source env/bin/activate
+    - source env/bin/activate
 
 - Initialize and upgrade the database using Alembic.
     - pip install pymysql
